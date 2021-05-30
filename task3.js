@@ -24,7 +24,7 @@ const makeTransaction = (transaction) => {
       setTimeout(() => {
           const canProcess = Math.random() > 0.3;
 
-          if (canProcess) {
+          if (canProcess) {    
               resolve({id:transaction.id, time:delay });
           }
           reject(transaction.id);
